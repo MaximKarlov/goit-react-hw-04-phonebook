@@ -13,5 +13,5 @@ export const Filter = ({ find }) => {
 };
 
 Filter.propTypes = {
-  onChange: PropTypes.func.isRequired,
+  find: PropTypes.func.isRequired,
 };

@@ -1,19 +1,9 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import ContactCss from '../Contacts/Contacts.module.css';
 
 export class ContactsItem extends Component {
-  // state = {
-  //   del: '',
-  // };
-
-  // deleteContacts = data => {
-  //   this.setState({ del: data });
-  //   // console.log(data);
-  //   this.props.onDelete(data);
-  // };
-
   render() {
     const { id, name, number } = this.props;
     return (
@@ -27,3 +17,9 @@ export class ContactsItem extends Component {
     );
   }
 }
+
+ContactsItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+};
