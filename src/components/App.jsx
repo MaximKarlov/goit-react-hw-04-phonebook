@@ -15,9 +15,7 @@ export const App = () => {
     }
     const readLocalStorage = load('ContactsArray');
     if (readLocalStorage.length > 0) {
-      if (contactsList.length === 0) {
-        setContactsList(readLocalStorage);
-      }
+      setContactsList(readLocalStorage);
     }
   }, []);
 
