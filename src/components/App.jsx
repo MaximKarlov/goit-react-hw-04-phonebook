@@ -6,7 +6,7 @@ import { Filter } from './Filter/Filter';
 import { ContactList } from './Contacts/Contacts';
 
 export const App = () => {
-  const [contactsList, setContactsList] = useState('');
+  const [contactsList, setContactsList] = useState([]);
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
